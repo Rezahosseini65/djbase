@@ -1,10 +1,10 @@
-FROM python:3.11.6-alpine3.18
+FROM python:3.12.6-alpine3.19
 
 LABEL org.opencontainers.image.authors="hosseini.reza65@gmail.com"
 LABEL version="0.1"
 
 
-ENV PYTHONUNBUFFERED 1
+ENV PYTHONUNBUFFERED=1
 ENV CRYPTOGRAPHY_DONT_BUILD_RUST=1
 
 COPY ./requirements.txt /common-requirements.txt
